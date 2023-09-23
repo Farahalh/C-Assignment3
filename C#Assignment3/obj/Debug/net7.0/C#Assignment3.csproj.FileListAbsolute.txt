@@ -1,0 +1,14 @@
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\bin\Debug\net7.0\C#Assignment3.exe
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\bin\Debug\net7.0\C#Assignment3.deps.json
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\bin\Debug\net7.0\C#Assignment3.runtimeconfig.json
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\bin\Debug\net7.0\C#Assignment3.dll
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\bin\Debug\net7.0\C#Assignment3.pdb
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\C#Assignment3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\C#Assignment3.AssemblyInfoInputs.cache
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\C#Assignment3.AssemblyInfo.cs
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\C#Assignment3.csproj.CoreCompileInputs.cache
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\C#Assignment3.dll
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\refint\C#Assignment3.dll
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\C#Assignment3.pdb
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\C#Assignment3.genruntimeconfig.cache
+C:\Users\Farah\OneDrive\Skrivbord\Lexicon-Kursmaterial\C-Sharp\Assignments\C#Assignment3\C#Assignment3\obj\Debug\net7.0\ref\C#Assignment3.dll
