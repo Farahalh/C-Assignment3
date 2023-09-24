@@ -36,7 +36,7 @@ namespace C_Assignment3
             }
         }
 
-            public class RandomErrorOne : UserError
+            public abstract class RandomErrorOne : UserError
         {
             public override string UEMessage()
             {
@@ -44,7 +44,7 @@ namespace C_Assignment3
             }
         }
 
-        public class RandomErrorTwo : UserError
+        public abstract class RandomErrorTwo : UserError
         {
             public override string UEMessage()
             {
@@ -52,7 +52,7 @@ namespace C_Assignment3
             }
         }
 
-        public class RandomErrorThree : UserError
+        public abstract class RandomErrorThree : UserError
         {
             public override string UEMessage()
             {
