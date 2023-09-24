@@ -1,4 +1,9 @@
-﻿namespace C_Assignment3
+﻿using System.ComponentModel;
+using System.Globalization;
+using System.Collections.Generic;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace C_Assignment3
 {
     internal class Program
     {
@@ -18,6 +23,41 @@
             Console.WriteLine("What is your weight?");
             person.Weight = int.Parse(Console.ReadLine());
             person.DisplayPersonAttributes();
+
+            List<UserError> errors = new List<UserError>();
+            {
+                new NumericInputError();
+                new TextInputError();
+            }
+
+            foreach (UserError error in errors)
+            {
+                Console.WriteLine(error.UEMessage());
+            }
+        }
+
+            public class RandomErrorOne : UserError
+        {
+            public override string UEMessage()
+            {
+                return "Custom error message one!";
+            }
+        }
+
+        public class RandomErrorTwo : UserError
+        {
+            public override string UEMessage()
+            {
+                return "Custom error message two!";
+            }
+        }
+
+        public class RandomErrorThree : UserError
+        {
+            public override string UEMessage()
+            {
+                return "Custom error message three!";
+            }
         }
     }
-}
+    }
