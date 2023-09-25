@@ -15,13 +15,13 @@ namespace C_Assignment3
         private double _height;
         private double _weight;
 
-        public int Age 
-        { 
-            get 
-            { return _age; } 
-            set 
-            { 
-                if (_age > 0)
+        public int Age
+        {
+            get
+            { return _age; }
+            set
+            {
+                if (value > 0)
                 {
                     _age = value;
                 }
@@ -29,37 +29,51 @@ namespace C_Assignment3
                 {
                     Console.WriteLine("Age must be greater than 0.");
                 }
-            } 
+            }
         }
 
         //Commenting out below as it needs a UI in ASP.NET
         //[Required(ErrorMessage = "This is a required field.")]
         //[Range(2,10, ErrorMessage = "Name must be between 2 and 10 letters.")]
-        public string FName 
-        { 
-            get 
-            { return _fName; } 
-            set 
+        public string FName
+        {
+            get
+            { return _fName; }
+            set
             {
-                if (_fName.Length < 10)
+                if (value.Length < 10)
                 {
                     _fName = value;
                 }
-
+                else if (value.Length > 2)
+                {
+                    _fName = value;
+                }
                 else
                 {
-                Console.WriteLine("Name must be greater than 2.");
+                    Console.WriteLine("Name must be greater than 2, but no less than 10 characters.");
                 }
-            } 
+            }
         }
-        public string LName 
-        { 
-            get 
-            { return _lName; } 
-            set 
-            { 
-                _lName = value; 
-            } 
+        public string LName
+        {
+            get
+            { return _lName; }
+            set
+            {
+                if (value.Length < 15)
+                {
+                    _lName = value;
+                }
+                else if (value.Length > 3)
+                {
+                    _lName = value;
+                }
+                else
+                {
+                    Console.WriteLine("Name must be greater than 3, but no less than 15 characters.");
+                }
+            }
         }
         public double Height { get { return _height; } set { _height = value; } }
         public double Weight { get { return _weight; } set { _weight = value; } }
@@ -70,8 +84,8 @@ namespace C_Assignment3
         }
 
         public void DisplayPersonAttributes()
-        { 
-            Console.WriteLine($"You are {Age} years, {Height}cm tall and weigh {Weight}kg."); 
+        {
+            Console.WriteLine($"You are {Age} years, {Height}cm tall and weigh {Weight}kg.");
         }
     }
 }

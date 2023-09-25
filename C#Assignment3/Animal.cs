@@ -29,16 +29,12 @@ namespace C_Assignment3
         }
     }
 
-    public abstract class Horse : Animal
+    public class Horse : Animal
     {
         public string Color { get; set; }
-
-        public string IsStrong { get; set; }
-        public override string Stats()
-        {
-            string baseStats = base.Stats();
-            return $"{baseStats}, IsStrong: {IsStrong}";
-        }
+        public override string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Age { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Horse(string name, double weight, int age, string color)
             : base(name, weight, age)
@@ -49,11 +45,21 @@ namespace C_Assignment3
         {
             Console.WriteLine("Neigh!");
         }
+
+        public override string Stats()
+        {
+            string baseStats = base.Stats();
+            return $"{baseStats}, Color: {Color}";
+        }
     }
 
-    public abstract class Dog : Animal
+    public class Dog : Animal
     {
+        //Implement all properties from abstract class animals, bcs it´s an abstract class
         public string Breed { get; set; }
+        public override string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Age { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Dog(string name, double weight, int age, string breed)
             : base(name, weight, age)
@@ -71,11 +77,21 @@ namespace C_Assignment3
         {
             Console.WriteLine("Woof!");
         }
+
+        public string NewMethod()
+        {
+            return "This is a new method in the Dog class.";
+        }
+        //3.3 13. -
+        //3.3 17. F. N oaccess to the list Animals
     }
 
-    public abstract class Hedgehog : Animal
+    public class Hedgehog : Animal
     {
         public int NrOfSpikes { get; set; }
+        public override string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Age { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Hedgehog(string name, double weight, int age, int nrOfSpikes)
             : base(name, weight, age)
@@ -89,9 +105,12 @@ namespace C_Assignment3
         }
     }
 
-    public abstract class Bird : Animal
+    public class Bird : Animal
     {
         public double WingSpan { get; set; }
+        public override string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Age { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Bird(string name, double weight, int age, double wingSpan)
             : base(name, weight, age)
@@ -105,9 +124,12 @@ namespace C_Assignment3
         }
     }
 
-    public abstract class Wolf : Animal
+    public class Wolf : Animal
     {
         public string PackName { get; set; }
+        public override string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override int Age { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Wolf(string name, double weight, int age, string packName)
             : base(name, weight, age)
@@ -121,7 +143,7 @@ namespace C_Assignment3
         }
     }
 
-    public abstract class Pelican : Bird
+    public class Pelican : Bird
     {
         public bool CanDive { get; set; }
 
@@ -137,7 +159,7 @@ namespace C_Assignment3
         }
     }
 
-    public abstract class Flamingo : Bird
+    public class Flamingo : Bird
     {
         public string Color { get; set; }
 
@@ -153,7 +175,7 @@ namespace C_Assignment3
         }
     }
 
-    public abstract class Swan : Bird
+    public class Swan : Bird
     {
         public bool IsElegant { get; set; }
 
@@ -174,7 +196,7 @@ namespace C_Assignment3
         void Talk();
     }
 
-    public abstract class Wolfman : Wolf, IPerson
+    public class Wolfman : Wolf, IPerson
     {
         public void Talk()
         {
@@ -187,7 +209,7 @@ namespace C_Assignment3
             Console.WriteLine("I sound like a human!");
         }
 
-        // In Bird class
-        // In Animal class
+        //3.2 13. F. In Bird class
+        //3.2 14. F. In Animal class
     }
     }
