@@ -12,7 +12,7 @@ namespace C_Assignment3
         public abstract string Name { get; set; }
         public abstract double Weight { get; set; }
 
-        public int Age { get; set; }
+        public abstract int Age { get; set; }
 
         public abstract void DoSound();
 
@@ -145,26 +145,31 @@ namespace C_Assignment3
             IsElegant = isElegant;
         }
 
-        public abstract class Swan : Bird
-        {
-            public bool IsElegant { get; set; }
-
-            public Swan(string name, double weight, int age, double wingSpan, bool isElegant)
-                : base(name, weight, age, wingSpan)
-            {
-                IsElegant = isElegant;
-            }
-
             public override void DoSound()
             {
                 Console.WriteLine("Honk!");
             }
         }
 
-        public interface IPerson
+    public interface IPerson
+    {
+        void Talk();
+    }
+
+    public abstract class Wolfman : Wolf, IPerson
+    {
+        public void Talk()
         {
-            void Talk();
+            Console.WriteLine("I am a Wolfman!");
         }
 
+        public Wolfman(string name, double weight, int age, string packName)
+        : base(name, weight, age, packName)
+        {
+            Console.WriteLine("I sound like a human!");
+        }
+
+        // In Bird class
+        // In Animal class
     }
-}
+    }
