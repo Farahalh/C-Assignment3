@@ -16,6 +16,11 @@ namespace C_Assignment3
 
         public abstract void DoSound();
 
+        public virtual string Stats()
+        {
+            return $"Name: {Name}, Weight: {Weight}, Age: {Age}";
+        }
+
         public Animal(string name, double weight, int age)
         {
             Name = name;
@@ -27,6 +32,13 @@ namespace C_Assignment3
     public abstract class Horse : Animal
     {
         public string Color { get; set; }
+
+        public string IsStrong { get; set; }
+        public override string Stats()
+        {
+            string baseStats = base.Stats();
+            return $"{baseStats}, IsStrong: {IsStrong}";
+        }
 
         public Horse(string name, double weight, int age, string color)
             : base(name, weight, age)
@@ -47,6 +59,12 @@ namespace C_Assignment3
             : base(name, weight, age)
         {
             Breed = breed;
+        }
+
+        public override string Stats()
+        {
+            string baseStats = base.Stats();
+            return $"{baseStats}, Breed: {Breed}";
         }
 
         public override void DoSound()
